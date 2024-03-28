@@ -40,12 +40,13 @@
 
 ### Create
 
-- controller - active record query to create a students, rendered json, added strong params method
+- controller - active record query to create a student, rendered json, added strong params method
 - checked in Postman, create in Postman: body tab, raw radio button, JSON in the dropdown
 
 ### Update
 
-- controller
+- controller - active record query to update a student by params, rendered json, added strong params method
+- checked in Postman, create in Postman: body tab, raw radio button, JSON in the dropdown
 
 ### Destroy
 

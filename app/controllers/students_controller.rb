@@ -15,6 +15,12 @@ class StudentsController < ApplicationController
     render json: student
   end
 
+  def update
+    student = Student.find(params[:id])
+    student.update(student_params)
+    render json: student
+  end
+
   private
   def student_params
     params.require(:student).permit(:name, :cohort)
