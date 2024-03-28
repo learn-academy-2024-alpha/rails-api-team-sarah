@@ -50,4 +50,5 @@
 
 ### Destroy
 
-- controller
+- controller - active record query to delete a student by params, rendered json
+- checked in Postman, once an item is removed the is never reused
