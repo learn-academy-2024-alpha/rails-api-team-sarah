@@ -10,4 +10,14 @@ class StudentsController < ApplicationController
     render json: student
   end
 
+  def create
+    student = Student.create(student_params)
+    render json: student
+  end
+
+  private
+  def student_params
+    params.require(:student).permit(:name, :cohort)
+  end
+
 end

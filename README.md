@@ -31,16 +31,17 @@
 ### Index
 
 - controller - active record query for all the students, rendered json
-- checked in postman
+- checked in Postman
 
 ### Show
 
 - controller - active record query for one students by params, rendered json
-- checked in postman
+- checked in Postman
 
 ### Create
 
-- controller
+- controller - active record query to create a students, rendered json, added strong params method
+- checked in Postman, create in Postman: body tab, raw radio button, JSON in the dropdown
 
 ### Update
 
