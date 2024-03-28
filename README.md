@@ -1,24 +1,54 @@
-# README
+# Rails API 3/28/2024
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Notes
 
-Things you may want to cover:
+- Add RSpec
+- Student model, name and cohort columns
+- `rails g resource Student name:string cohort:string`
+- resource generate command - model, controller, routes
+- rails routes
+- endpoint - how you can get data from the database when making a request over the internet
+- if Postman returns HTML, click over to the preview tab
 
-* Ruby version
+### RESTful Routes
 
-* System dependencies
+- index - read, all the data
+- show - read, one datum
+- new - nothing
+- create - create new data
+- edit - nothing
+- update - updates existing data
+- destroy - deletes data
 
-* Configuration
+### RESTful API
 
-* Database creation
+- index - read, all the data
+- show - read, one datum
+- create - create new data
+- update - updates existing data
+- destroy - deletes data
 
-* Database initialization
+### Index
 
-* How to run the test suite
+- controller - active record query for all the students, rendered json
+- checked in Postman
 
-* Services (job queues, cache servers, search engines, etc.)
+### Show
 
-* Deployment instructions
+- controller - active record query for one students by params, rendered json
+- checked in Postman
 
-* ...
+### Create
+
+- controller - active record query to create a student, rendered json, added strong params method
+- checked in Postman, create in Postman: body tab, raw radio button, JSON in the dropdown
+
+### Update
+
+- controller - active record query to update a student by params, rendered json, added strong params method
+- checked in Postman, create in Postman: body tab, raw radio button, JSON in the dropdown
+
+### Destroy
+
+- controller - active record query to delete a student by params, rendered json
+- checked in Postman, once an item is removed the is never reused
